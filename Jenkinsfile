@@ -12,7 +12,7 @@ pipeline {
         stage('Logging into AWS ECR') {
             steps {
                 withCredentials([usernamePassword(
-                    credentialsId: 'jenkins_user',
+                    credentialsId: 'jenkins_user1',
                     usernameVariable: 'AWS_ACCESS_KEY_ID',
                     passwordVariable: 'AWS_SECRET_ACCESS_KEY'
                 )]) {
